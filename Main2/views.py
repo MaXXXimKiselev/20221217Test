@@ -21,3 +21,7 @@ def test(response):
 def picture(request):
     data = product.objects.all()
     return render(request, 'main2/picture.html',{'data':data})
+
+
+
+    
