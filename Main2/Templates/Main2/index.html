@@ -1,0 +1,21 @@
+{% extends 'Main2/base.html'%}
+{% block title %}
+     {{title}}
+{% endblock %}
+{% block content %}
+    <h1> Hi Irina! </h1>
+    <h2> Hi Irina! </h2>
+    <h3> Hi Irina! </h3>
+    {%for x in data%}
+    <center>
+        <div class="card" style="width: 18rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Kodak_C613.jpg/1599px-Kodak_C613.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">{{x.name}}</h5>
+            <p class="card-text">{{x.description}}</p>
+            <a href="#" class="btn btn-primary">{{x.price}}</a>
+            </div>
+        </div>
+    </center>
+    {%endfor%}
+{% endblock %}
